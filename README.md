@@ -7,6 +7,6 @@ This Lab assignment was to create an ALU capable of 7 arithmentic and logic oper
 ALU.v is the top level module.
 NbitAdder.v is a dynamically generated 32bit adder.
 FullAdder.v is the 1 bit full adder module used to instantiate the NbitAdder.
-ALU.v is the Modelsim Testbench.
+ALU_TB.v is the Modelsim Testbench.
 
 The two images are simulation screenshots.
