@@ -9,7 +9,7 @@
 
 module ALU(A,B,cin,Select,Output,isNegative,isZero, Overflow, CarryOut);
 	input [31:0] A,B;
-	input [3:0] Select;
+	input [2:0] Select;
 	input cin;
 	output reg [31:0] Output;
 	output wire CarryOut;
@@ -31,7 +31,7 @@ module ALU(A,B,cin,Select,Output,isNegative,isZero, Overflow, CarryOut);
 	 
 	
 	
-	always @(*)
+	always @(Select)
 	begin
         case(Select)
         3'b000: // Addition
